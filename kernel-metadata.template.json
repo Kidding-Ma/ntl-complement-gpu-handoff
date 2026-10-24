@@ -1,0 +1,50 @@
+{
+  "id": "kiddingma/ntl-complement-gpu-handoff",
+  "title": "NTL Complement GPU Handoff",
+  "code_file": "ntl_part_two_complement_ready.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": false,
+  "dataset_sources": [
+    "dhruvtibarewal/nlm-l24-adapters",
+    "seyitkaangunes/ntl-extra-api-passages",
+    "abdullah1afify/ntl-generations",
+    "dophuchung/ntl-proxy-generations",
+    "zbigniewkirchner/ntl-qwen3-8b-lora-claude-head",
+    "dhruvtibarewal/nlm-matched-clean",
+    "dhruvtibarewal/nlm-offline-wheels",
+    "josephadamski91/ntl-atlas-qwen3-8b-v1",
+    "lucasboesen/ntl-free-proxy-generations",
+    "fleongg/ntl-legacy-qwen24-recovery",
+    "fleongg/ntl-quality-selected-public-svc-pool",
+    "nishantdahal/ntl-two-stage-lora",
+    "nishantdahal/ntl-handwriting-blend",
+    "prvsiyan/prvsiyans-extended-name-that-llm-dataset",
+    "bbucxi/qwen35-9b-safetensors",
+    "pjmathematician/ultrabert-380m-ntl"
+  ],
+  "kernel_sources": [
+    "lucasboesen/name-that-llm-glm4-9b-trunc25",
+    "lucasboesen/name-that-llm-extract-encoders2",
+    "lucasboesen/name-that-llm-electra-large-weights",
+    "lucasboesen/name-that-llm-desklib-weights",
+    "lucasboesen/name-that-llm-train-lora24-s7",
+    "lucasboesen/name-that-llm-train-tokattn",
+    "lucasboesen/name-that-llm-train-tokattn2",
+    "vnton37nguyn/ntl-train-lora-qwen25-instyle"
+  ],
+  "competition_sources": [
+    "name-that-llm"
+  ],
+  "model_sources": [
+    "qwen-lm/qwen-3/Transformers/14b-base/1",
+    "qwen-lm/qwen-3/Transformers/8b-base/1",
+    "qwen-lm/qwen-3/Transformers/14b/1",
+    "qwen-lm/qwen-3/Transformers/8b/1",
+    "qwen-lm/qwen-3/Transformers/4b-base/1",
+    "qwen-lm/qwen2.5/Transformers/7b/1",
+    "qwen-lm/qwen2.5/Transformers/14b/1"
+  ]
+}

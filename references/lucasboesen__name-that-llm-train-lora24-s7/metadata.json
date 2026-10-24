@@ -1,0 +1,47 @@
+{
+  "languageNullable": "python",
+  "kernelTypeNullable": "notebook",
+  "isPrivateNullable": false,
+  "enableGpuNullable": true,
+  "enableTpuNullable": false,
+  "enableInternetNullable": false,
+  "currentVersionNumberNullable": 1,
+  "dockerImageNullable": "gcr.io/kaggle-private-byod/python@sha256:2757e0c7d1e0a9cb43da657b97e223c321a98f5014bdf64f44f2f6b083ad2b2f",
+  "machineShapeNullable": "NvidiaTeslaT4",
+  "id": 138978436,
+  "ref": "lucasboesen/name-that-llm-train-lora24-s7",
+  "title": "name-that-llm-train-lora24-s7",
+  "author": "Lucas Boesen",
+  "slug": "name-that-llm-train-lora24-s7",
+  "lastRunTime": "2026-10-21T07:32:56.349408Z",
+  "language": "python",
+  "hasLanguage": true,
+  "kernelType": "notebook",
+  "hasKernelType": true,
+  "isPrivate": false,
+  "hasIsPrivate": true,
+  "enableGpu": true,
+  "hasEnableGpu": true,
+  "enableTpu": false,
+  "hasEnableTpu": true,
+  "enableInternet": false,
+  "hasEnableInternet": true,
+  "categoryIds": [
+    "gpu"
+  ],
+  "datasetDataSources": [],
+  "kernelDataSources": [],
+  "competitionDataSources": [
+    "name-that-llm"
+  ],
+  "modelDataSources": [
+    "qwen-lm/qwen-3/Transformers/8b-base/1"
+  ],
+  "totalVotes": 9,
+  "currentVersionNumber": 1,
+  "hasCurrentVersionNumber": true,
+  "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:2757e0c7d1e0a9cb43da657b97e223c321a98f5014bdf64f44f2f6b083ad2b2f",
+  "hasDockerImage": true,
+  "machineShape": "NvidiaTeslaT4",
+  "hasMachineShape": true
+}

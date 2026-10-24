@@ -1,0 +1,1 @@
+Historical cached source from lightningv08/ntl-lora24-fivefold-training, copied from local evidence. Current API returned 403 on 2026-10-24. This is source only, NOT its checkpoint and not verified to reproduce the legacy recovered weights. Original credits retained.

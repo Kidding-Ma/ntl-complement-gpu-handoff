@@ -1,0 +1,50 @@
+{
+  "languageNullable": "python",
+  "kernelTypeNullable": "notebook",
+  "isPrivateNullable": false,
+  "enableGpuNullable": true,
+  "enableTpuNullable": false,
+  "enableInternetNullable": false,
+  "currentVersionNumberNullable": 2,
+  "dockerImageNullable": "gcr.io/kaggle-private-byod/python@sha256:9a6bcfda6d03b2cd9aa347ee8c1bae62043328ed0f4afe9bda014e4f8bbf9435",
+  "machineShapeNullable": "NvidiaTeslaT4",
+  "id": 140306245,
+  "ref": "nishantdahal/two-stage-lora-part-two",
+  "title": "Two-stage LoRA, part two",
+  "author": "Nishant Dahal",
+  "slug": "two-stage-lora-part-two",
+  "lastRunTime": "2026-10-21T07:32:57.7186526Z",
+  "language": "python",
+  "hasLanguage": true,
+  "kernelType": "notebook",
+  "hasKernelType": true,
+  "isPrivate": false,
+  "hasIsPrivate": true,
+  "enableGpu": true,
+  "hasEnableGpu": true,
+  "enableTpu": false,
+  "hasEnableTpu": true,
+  "enableInternet": false,
+  "hasEnableInternet": true,
+  "categoryIds": [
+    "gpu"
+  ],
+  "datasetDataSources": [
+    "nishantdahal/ntl-handwriting-blend"
+  ],
+  "kernelDataSources": [],
+  "competitionDataSources": [
+    "name-that-llm"
+  ],
+  "modelDataSources": [
+    "qwen-lm/qwen-3/Transformers/14b-base/1",
+    "qwen-lm/qwen2.5/Transformers/14b/1"
+  ],
+  "totalVotes": 56,
+  "currentVersionNumber": 2,
+  "hasCurrentVersionNumber": true,
+  "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:9a6bcfda6d03b2cd9aa347ee8c1bae62043328ed0f4afe9bda014e4f8bbf9435",
+  "hasDockerImage": true,
+  "machineShape": "NvidiaTeslaT4",
+  "hasMachineShape": true
+}

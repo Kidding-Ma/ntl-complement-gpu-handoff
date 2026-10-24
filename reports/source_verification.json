@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "files_hashed": 57,
+  "python_files_parsed": 15,
+  "notebook_cells": 24,
+  "source_identical": true,
+  "assets": 32,
+  "train_rows": 2699,
+  "test_preview_rows": 3,
+  "gpu_tested": false,
+  "errors": []
+}

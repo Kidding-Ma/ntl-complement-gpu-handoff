@@ -1,0 +1,10 @@
+{
+  "source": "https://www.kaggle.com/competitions/name-that-llm/data",
+  "copied_from": "existing local competition download",
+  "contains": "Official public training data and three-row test preview only. No hidden test or labels. Original competition terms apply.",
+  "files": {
+    "sample_submission.parquet": "ccf86796b80fd7f83d8463664603fd1208e17559abcf416f198776b819646188",
+    "test.csv": "4545aa3a3459f4c0724f97ad5bd06c4caa3506bdfea5fab905e8203184fc0c57",
+    "train.csv": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707"
+  }
+}

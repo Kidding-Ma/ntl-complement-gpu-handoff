@@ -1,0 +1,7 @@
+{
+  "credential_pattern_scan_passed": true,
+  "notebook_schema_validated": true,
+  "gpu_tested": false,
+  "missing_input_test": "preflight fails closed on empty/missing asset tree",
+  "scope": "CPU delivery verification only"
+}

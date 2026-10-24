@@ -1,0 +1,47 @@
+[
+  {
+    "order": 1,
+    "file": "exact_author_joint.py",
+    "line": 17
+  },
+  {
+    "order": 2,
+    "file": "stage_local_checkpoint.py",
+    "line": 18
+  },
+  {
+    "order": 3,
+    "file": "pool_hidden_safely.py",
+    "line": 19
+  },
+  {
+    "order": 4,
+    "file": "stage_local_checkpoint.py",
+    "line": 20
+  },
+  {
+    "order": 5,
+    "file": "gauss.py",
+    "line": 24
+  },
+  {
+    "order": 6,
+    "file": "comp_stack.py",
+    "line": 28
+  },
+  {
+    "order": 7,
+    "file": "stage_local_checkpoint.py",
+    "line": 36
+  },
+  {
+    "order": 8,
+    "file": "local_safetensors.py",
+    "line": 37
+  },
+  {
+    "order": 9,
+    "file": "stage_local_checkpoint.py",
+    "line": 63
+  }
+]
