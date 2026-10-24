@@ -1,0 +1,2 @@
+# Preserve exact upstream/data bytes across Windows and Linux clones.
+* -text
