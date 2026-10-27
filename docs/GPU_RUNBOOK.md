@@ -68,4 +68,4 @@ work-dir 必须全新/为空。入口会复制原模块到 stage，显式替换 
 
 ## 5. 最后交付
 
-按 docs/KAGGLE_SUBMISSION.md 转回 Kaggle。委托人没有 GPU，因此只交一个本地 parquet 不够：必须能在正式隐藏 test 上重新计算。按 docs/DELIVERY.md 打包轻量源码、运行记录和最终 Notebook，重型权重通过合法可访问来源交接。
+先按 docs/DELIVERY.md 交回本地成果，包括轻量源码、运行记录和 Notebook；重型权重通过合法可访问来源交接。原项目发起人没有 GPU，所以同时保留完整推理入口，方便后续在 Kaggle 隐藏 test 上重新计算。之后按 docs/KAGGLE_SUBMISSION.md 准备 Kaggle 验证，是否正式提交评分由当前用户决定。

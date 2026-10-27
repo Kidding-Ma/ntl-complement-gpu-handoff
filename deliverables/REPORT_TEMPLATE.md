@@ -1,6 +1,8 @@
 # Name That LLM Solution GPU 结果报告
 
 - 状态：未执行 / success / incomplete / blocked
+- 本地 GPU 阶段：未执行 / 通过 / 失败 / 阻塞
+- Kaggle 验证阶段：未执行 / 可见运行通过 / 隐藏测试完成 / 失败
 - 执行人/日期：
 - Git commit / Notebook version / script ID：
 - 原始快照 hash 核验：

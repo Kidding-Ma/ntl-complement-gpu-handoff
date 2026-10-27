@@ -1,5 +1,7 @@
 # GPU 接收方交付与验收
 
+分两阶段交付：先交回本地 GPU 运行成果；有条件并经当前用户决定后，再补充 Kaggle 隐藏测试与正式评分。本地完整运行可以独立交付，报告明确后续验证尚未完成即可。
+
 提交一个轻量结果包或可访问的 Git 分支，包含以下平行项目：
 
 - 完成的 REPORT.md（按 deliverables/REPORT_TEMPLATE.md 填写），明确 success / incomplete / blocked。
@@ -10,7 +12,7 @@
 - component table：18 个 v5 adapter 和其他主/互补成员的实际加载/完成；COMP STACK DONE、comp stack loaded、ATLAS mixed at 0.16、所有跳过项及理由。
 - submission.parquet 和验证报告；ID 与运行当次 test 一一对应，无重复/空值、只含合法 18 类。
 - comp_logit.npy / comp_meta.json（较小可另附），形状 `(n_test,18)`，有限值、类顺序与 ID 一致。
-- Kaggle 隐藏重跑的精确版本/时间/结果或失败证据；有官方分数才填写，没有就写“未取得”。
+- 若已进行 Kaggle 隐藏重跑，附精确版本/时间/结果或失败证据；尚未进行则写“未执行”，不影响交回已完成的本地成果。有官方分数才填写成绩。
 
 不能验收：只有建议/截图/三行 submission；只有 `exit 0`；缺权重后删模型；ATLAS 超时后跳过；训练自检高准确率；输出继承旧缓存；拿 README 的 .651 充当本次分数；只给本地路径而接收方无法下载。
 

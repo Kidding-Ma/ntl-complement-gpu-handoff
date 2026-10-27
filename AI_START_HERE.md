@@ -1,30 +1,30 @@
-# 给接收方 AI 的完整任务书
+# 开始执行：在本机 GPU 上复现 Name That LLM
 
-你运行在朋友有 NVIDIA GPU 的电脑上。委托人没有 GPU。请实际执行并交付，不要只输出建议。
+这个工作区已经整理了指定 Kaggle 方案的源码、依赖清单和运行工具。请接着完成环境适配、输入准备和 GPU 执行，产出可复查的结果。
 
-## 目标和成功条件
+原项目发起人没有 GPU，所以将 GPU 部分交给当前机器完成。**当前与你对话的用户是提供计算资源的人**；需要确认本机资源或处理账号登录时，向当前用户说明具体需要即可。
 
-复现用户给定的 Kaggle Notebook 当前已固定的 V25 源码，完成已有模型/LoRA/编码器/词法统计/ATLAS/后处理的完整推理。优先复现本快照，避免追踪 latest 引入漂移。最终交回：完整运行证据、合格的提交文件、可在 Kaggle 隐藏测试断网重跑的 Notebook、输入版本与环境清单，以及中文结果报告。成绩只认实际 Kaggle 官方回执。
+## 先完成本地运行
 
-本仓库的原始说明有复制来的 0.651 声明，**不是本 V25 的已验证成绩**。先读 docs/SOURCE_AUDIT.md。第一阶段无需重训适配器，不得以换成其他作者配方代替完成任务。
+第一阶段的目标是：用现有 GPU 跑通本快照的完整推理与融合，交付 `submission.parquet`、完整日志、环境记录和可重跑的代码。这份方案使用已有的模型与适配器，起步不需要从零训练。
 
-## 执行顺序
+工作区固定的是 `mohammedafreedpasha/name-that-llm-solution` 的 V25。原说明中的 0.651 来自被引用的其他运行记录，与本快照部分参数不一致；此次成绩需要另行验证。具体差异已放在 [源码审计](docs/SOURCE_AUDIT.md)，运行配置以本快照代码为准。
 
-1. `python scripts/verify_workspace.py`，再读 docs/GPU_RUNBOOK.md、docs/INPUTS.md、docs/DELIVERY.md。
-2. 调查本机 GPU 型号/显存、驱动、CUDA、内存、磁盘；记录 `nvidia-smi`，确认 Python 和 torch 可用。先用已有硬件，不购买云资源。
-3. 对照 `config/inputs.json`，下载 16 Dataset、9 Notebook Outputs、7 Model versions、1 Competition。自备有权限的 Kaggle 账号和本机凭据；不向委托人索要或上传密钥。首次参加比赛需由账号持有人接受规则。
-4. 模型输入固定为清单里的版本 1。Dataset/Notebook 的挂载版本未由 pull API 公开，必须从 Input 面板/历史版本确认；无法确认时记录实际下载版本与 SHA-256，并明确写“版本未完全锁定”。下载 latest 不能冒充原版本。
-5. `python scripts/preflight.py --input-root /absolute/input --gpu --output preflight.json`。缺文件/路径歧义时先解决，不直接启动数小时推理。Llama 必须是 base 3.1 8B，按缓存的验证报告检查字节身份。
-6. `python scripts/run_pipeline.py --input-root /absolute/input --work-dir /absolute/run-001`。使用全新运行目录。保存标准输出、各组件日志、GPU 状态、环境 freeze。原始三个模块不可直接改写；兼容补丁单独记录。
-7. 修复实际发生的环境/路径错误后重跑。不得让缺失的必需组件、ATLAS SKIPPED、COMP SKIPPED 或 traceback 被忽略。历史 `lora24_public` 缺权重在原注释中可跳过，但也必须记录；其他 LoRA 不得默默跳过。原代码有意关闭 Qwen3.5 token-attention，保留 `NTL_DROP_Q35=1`。
-8. 用验证器检查 submission；检查 18 类、ID 对齐、无空值和重复、comp logits 形状与有限值、ATLAS 的实际混入。公开 test 只做格式检查，少于 18/50 行时部分后处理分支不会被覆盖。可用原 `--fake_test` 做负载探测，但不能称为成绩。
-9. 导入 `notebooks/solution_strict.ipynb` 到 Kaggle，附齐来源，在可用 GPU 和限时内执行断网 Save & Run All。用正式测试入口，不带模拟开关。需要账号持有人授权/完成的比赛提交由其办理。保留准确 version/script ID、运行和评分回执。
-10. 填写 deliverables/REPORT_TEMPLATE.md，按 docs/DELIVERY.md 返回源码、Notebook、日志、版本、hash、环境及结果。若确实被权重权限阻塞，返回可复查阻塞清单，状态为 blocked/incomplete。
+建议按以下顺序推进：
 
-## 自主处理范围
+1. **检查机器和仓库。** 执行 `python scripts/verify_workspace.py`，查看 GPU 型号/显存、驱动、Python、内存和磁盘，判断现有硬件是否适合。GPU 尚未配置时先完成可做的环境和输入检查。
+2. **准备环境与输入。** 参考 [GPU 手册](docs/GPU_RUNBOOK.md) 和 [输入说明](docs/INPUTS.md)。先列出已有与缺失资源，再安排下载；33 项引用及目录在 `config/inputs.json`。候选依赖尚未经 GPU 验证，需要根据实际报错适配。Dataset/Notebook 的部分历史版本尚待确认；查不到时记录实际使用版本与文件 hash，继续推进能完成的部分。
+3. **完成预检。** 执行 `python scripts/preflight.py --input-root /实际输入目录 --gpu --output preflight.json`，根据报告解决缺文件和路径问题。账号登录或条款接受需要当前用户参与时，说明卡在哪个具体资源；同时继续其他独立工作。
+4. **运行并调试。** 执行 `python scripts/run_pipeline.py --input-root /实际输入目录 --work-dir /新的结果目录`。入口会保存日志和运行记录。按实际硬件调整批大小、路径和兼容代码即可；保留原始源码快照，把调整及其影响写进报告。模型、数据、融合系数与后处理先沿用 V25。
+5. **检查输出。** 使用 `scripts/validate_submission.py` 对照当次 test 检查提交格式，并检查各组件是否实际完成。遇到 COMP/ATLAS 跳过或缺必需模型，先定位原因，再判断是否能修复。历史 `lora24_public` 缺失和 `NTL_DROP_Q35=1` 的处理已有原代码依据，详见审计文档。
+6. **交回结果。** 在 `deliverables/` 写中文 `REPORT.md`，可使用 [报告模板](deliverables/REPORT_TEMPLATE.md)。按 [交付清单](docs/DELIVERY.md) 整理代码、Notebook、日志、环境、输入版本和提交文件。报告区分已完成、未验证和仍被阻塞的部分。
 
-允许：在现有 GPU 上安装公开 Python 依赖、只读获取公开输入、修复路径/兼容性、完善日志、在独立分支保存补丁、做可复现的运行检查。
+公开 test 只有少量示例；本地跑通能证明这次执行和格式通过，隐藏测试的耗时、部分分支及分数仍待验证。需要负载探测时用单独结果目录，并在报告中标注用途。
 
-另开实验且先标记：改 batch/精度/模型深度、重训、改系数/阈值/数据、启用已禁用组件、删掉失败成员、换基础模型。先完成基线；OOM 可调 batch 但需列出差异并重跑验收。
+## 本地跑通后，再做 Kaggle 验证
 
-不要把训练行自检当 GroupKFold OOF；如果后续研究新方案，按 prompt_id 分组验证，保留未调参评估集。不要承诺 0.651 或编造显存峰值和耗时。
+仓库提供自包含的 `notebooks/solution_strict.ipynb`。本地完成后，将必要的兼容修复同步到 Notebook，按 [Kaggle 步骤](docs/KAGGLE_SUBMISSION.md) 准备断网重跑。
+
+有可用账号、权限和算力时，可继续做保存版本的执行验证。是否正式提交评分，由当前用户决定。没有正式评分回执时，照常交付本地成果，报告写明“本地运行通过，Kaggle 隐藏测试/成绩未验证”。
+
+日常的环境适配、路径修复和调试可以直接推进。需要额外付费资源，或准备大幅改变方案时，再与当前用户确认。凭据保留在本机，交付包放代码和可复查的运行材料。
