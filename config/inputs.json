@@ -1,0 +1,271 @@
+{
+  "source_ref": "mohammedafreedpasha/name-that-llm-solution",
+  "source_version": 25,
+  "fetched_at_utc": "2026-10-27T13:26:21.708094+00:00",
+  "inputs": [
+    {
+      "kind": "dataset",
+      "ref": "dhruvtibarewal/nlm-l24-adapters",
+      "url": "https://www.kaggle.com/datasets/dhruvtibarewal/nlm-l24-adapters",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "nlm-l24-adapters"
+    },
+    {
+      "kind": "dataset",
+      "ref": "seyitkaangunes/ntl-extra-api-passages",
+      "url": "https://www.kaggle.com/datasets/seyitkaangunes/ntl-extra-api-passages",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "ntl-extra-api-passages"
+    },
+    {
+      "kind": "dataset",
+      "ref": "abdullah1afify/ntl-generations",
+      "url": "https://www.kaggle.com/datasets/abdullah1afify/ntl-generations",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "ntl-generations"
+    },
+    {
+      "kind": "dataset",
+      "ref": "dophuchung/ntl-proxy-generations",
+      "url": "https://www.kaggle.com/datasets/dophuchung/ntl-proxy-generations",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "ntl-proxy-generations"
+    },
+    {
+      "kind": "dataset",
+      "ref": "zbigniewkirchner/ntl-qwen3-8b-lora-claude-head",
+      "url": "https://www.kaggle.com/datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "ntl-qwen3-8b-lora-claude-head"
+    },
+    {
+      "kind": "dataset",
+      "ref": "dhruvtibarewal/nlm-matched-clean",
+      "url": "https://www.kaggle.com/datasets/dhruvtibarewal/nlm-matched-clean",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "nlm-matched-clean"
+    },
+    {
+      "kind": "dataset",
+      "ref": "dhruvtibarewal/nlm-offline-wheels",
+      "url": "https://www.kaggle.com/datasets/dhruvtibarewal/nlm-offline-wheels",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "nlm-offline-wheels"
+    },
+    {
+      "kind": "dataset",
+      "ref": "josephadamski91/ntl-atlas-qwen3-8b-v1",
+      "url": "https://www.kaggle.com/datasets/josephadamski91/ntl-atlas-qwen3-8b-v1",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "ntl-atlas-qwen3-8b-v1"
+    },
+    {
+      "kind": "dataset",
+      "ref": "lucasboesen/ntl-free-proxy-generations",
+      "url": "https://www.kaggle.com/datasets/lucasboesen/ntl-free-proxy-generations",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "ntl-free-proxy-generations"
+    },
+    {
+      "kind": "dataset",
+      "ref": "danielandresmiranda/ntl-openrouter-glm-kimi",
+      "url": "https://www.kaggle.com/datasets/danielandresmiranda/ntl-openrouter-glm-kimi",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "ntl-openrouter-glm-kimi"
+    },
+    {
+      "kind": "dataset",
+      "ref": "kirilltym/ntl-spectral-style-heads-paired-4404",
+      "url": "https://www.kaggle.com/datasets/kirilltym/ntl-spectral-style-heads-paired-4404",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "ntl-spectral-style-heads-paired-4404"
+    },
+    {
+      "kind": "dataset",
+      "ref": "nishantdahal/ntl-two-stage-lora",
+      "url": "https://www.kaggle.com/datasets/nishantdahal/ntl-two-stage-lora",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "ntl-two-stage-lora"
+    },
+    {
+      "kind": "dataset",
+      "ref": "nishantdahal/ntl-handwriting-blend",
+      "url": "https://www.kaggle.com/datasets/nishantdahal/ntl-handwriting-blend",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "ntl-handwriting-blend"
+    },
+    {
+      "kind": "dataset",
+      "ref": "dhruvtibarewal/nlm-l24-adapters-v5",
+      "url": "https://www.kaggle.com/datasets/dhruvtibarewal/nlm-l24-adapters-v5",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "nlm-l24-adapters-v5"
+    },
+    {
+      "kind": "dataset",
+      "ref": "prvsiyan/prvsiyans-extended-name-that-llm-dataset",
+      "url": "https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "prvsiyans-extended-name-that-llm-dataset"
+    },
+    {
+      "kind": "dataset",
+      "ref": "pjmathematician/ultrabert-380m-ntl",
+      "url": "https://www.kaggle.com/datasets/pjmathematician/ultrabert-380m-ntl",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "ultrabert-380m-ntl"
+    },
+    {
+      "kind": "kernel",
+      "ref": "lucasboesen/name-that-llm-glm4-9b-trunc25",
+      "url": "https://www.kaggle.com/code/lucasboesen/name-that-llm-glm4-9b-trunc25",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "name-that-llm-glm4-9b-trunc25"
+    },
+    {
+      "kind": "kernel",
+      "ref": "lucasboesen/name-that-llm-extract-encoders2",
+      "url": "https://www.kaggle.com/code/lucasboesen/name-that-llm-extract-encoders2",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "name-that-llm-extract-encoders2"
+    },
+    {
+      "kind": "kernel",
+      "ref": "lucasboesen/name-that-llm-electra-large-weights",
+      "url": "https://www.kaggle.com/code/lucasboesen/name-that-llm-electra-large-weights",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "name-that-llm-electra-large-weights"
+    },
+    {
+      "kind": "kernel",
+      "ref": "lucasboesen/name-that-llm-desklib-weights",
+      "url": "https://www.kaggle.com/code/lucasboesen/name-that-llm-desklib-weights",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "name-that-llm-desklib-weights"
+    },
+    {
+      "kind": "kernel",
+      "ref": "lucasboesen/name-that-llm-train-lora24-s7",
+      "url": "https://www.kaggle.com/code/lucasboesen/name-that-llm-train-lora24-s7",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "name-that-llm-train-lora24-s7"
+    },
+    {
+      "kind": "kernel",
+      "ref": "lucasboesen/name-that-llm-train-tokattn",
+      "url": "https://www.kaggle.com/code/lucasboesen/name-that-llm-train-tokattn",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "name-that-llm-train-tokattn"
+    },
+    {
+      "kind": "kernel",
+      "ref": "lucasboesen/name-that-llm-train-tokattn2",
+      "url": "https://www.kaggle.com/code/lucasboesen/name-that-llm-train-tokattn2",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "name-that-llm-train-tokattn2"
+    },
+    {
+      "kind": "kernel",
+      "ref": "vnton37nguyn/ntl-train-lora-qwen25-instyle",
+      "url": "https://www.kaggle.com/code/vnton37nguyn/ntl-train-lora-qwen25-instyle",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "ntl-train-lora-qwen25-instyle"
+    },
+    {
+      "kind": "kernel",
+      "ref": "avazaku/name-that-llm-verified-llama-asset-cache",
+      "url": "https://www.kaggle.com/code/avazaku/name-that-llm-verified-llama-asset-cache",
+      "version": 1,
+      "version_status": "source documentation pins cache v1; verify selected attachment",
+      "target": "name-that-llm-verified-llama-asset-cache"
+    },
+    {
+      "kind": "model",
+      "ref": "qwen-lm/qwen-3/Transformers/8b/1",
+      "url": "https://www.kaggle.com/models/qwen-lm/qwen-3/Transformers/8b/1",
+      "version": 1,
+      "version_status": "explicit model version",
+      "target": "qwen-3/8b/transformers/1"
+    },
+    {
+      "kind": "model",
+      "ref": "qwen-lm/qwen-3/Transformers/14b/1",
+      "url": "https://www.kaggle.com/models/qwen-lm/qwen-3/Transformers/14b/1",
+      "version": 1,
+      "version_status": "explicit model version",
+      "target": "qwen-3/14b/transformers/1"
+    },
+    {
+      "kind": "model",
+      "ref": "qwen-lm/qwen-3/Transformers/8b-base/1",
+      "url": "https://www.kaggle.com/models/qwen-lm/qwen-3/Transformers/8b-base/1",
+      "version": 1,
+      "version_status": "explicit model version",
+      "target": "qwen-3/8b-base/transformers/1"
+    },
+    {
+      "kind": "model",
+      "ref": "qwen-lm/qwen-3/Transformers/14b-base/1",
+      "url": "https://www.kaggle.com/models/qwen-lm/qwen-3/Transformers/14b-base/1",
+      "version": 1,
+      "version_status": "explicit model version",
+      "target": "qwen-3/14b-base/transformers/1"
+    },
+    {
+      "kind": "model",
+      "ref": "qwen-lm/qwen-3/Transformers/4b-base/1",
+      "url": "https://www.kaggle.com/models/qwen-lm/qwen-3/Transformers/4b-base/1",
+      "version": 1,
+      "version_status": "explicit model version",
+      "target": "qwen-3/4b-base/transformers/1"
+    },
+    {
+      "kind": "model",
+      "ref": "qwen-lm/qwen2.5/Transformers/7b/1",
+      "url": "https://www.kaggle.com/models/qwen-lm/qwen2.5/Transformers/7b/1",
+      "version": 1,
+      "version_status": "explicit model version",
+      "target": "qwen2.5/7b/transformers/1"
+    },
+    {
+      "kind": "model",
+      "ref": "qwen-lm/qwen2.5/Transformers/14b/1",
+      "url": "https://www.kaggle.com/models/qwen-lm/qwen2.5/Transformers/14b/1",
+      "version": 1,
+      "version_status": "explicit model version",
+      "target": "qwen2.5/14b/transformers/1"
+    },
+    {
+      "kind": "competition",
+      "ref": "name-that-llm",
+      "url": "https://www.kaggle.com/competitions/name-that-llm",
+      "version": null,
+      "version_status": "selected attachment version not exposed by pull API; receiver must resolve",
+      "target": "competitions/name-that-llm"
+    }
+  ]
+}

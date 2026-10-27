@@ -1,0 +1,14 @@
+# Candidate Linux environment, NOT a recovered upstream pip freeze.
+# Install CUDA-compatible torch separately; see docs/GPU_RUNBOOK.md.
+-r requirements-tools.txt
+scipy==1.16.3
+scikit-learn==1.6.1
+transformers>=4.57,<5
+accelerate>=1.10,<2
+peft>=0.17,<1
+bitsandbytes>=0.47,<1
+safetensors>=0.6,<1
+lightgbm>=4.6,<5
+sentencepiece>=0.2,<1
+protobuf>=5,<7
+einops>=0.8,<1

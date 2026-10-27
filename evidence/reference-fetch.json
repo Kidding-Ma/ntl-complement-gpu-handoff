@@ -1,0 +1,78 @@
+[
+  {
+    "ref": "lucasboesen/name-that-llm-glm4-9b-trunc25",
+    "http": 200,
+    "fetched_at_utc": "2026-10-27T13:26:24.158712+00:00",
+    "source_sha256": "be01104eaccd394f431c23bb180cd0b7a937c0d84dce7b53292c0cb9466904df",
+    "version": 1
+  },
+  {
+    "ref": "lucasboesen/name-that-llm-extract-encoders2",
+    "http": 200,
+    "fetched_at_utc": "2026-10-27T13:26:24.261112+00:00",
+    "source_sha256": "fe55434c0ac458a7b855f8abb6d8f7b3d2bbb9e38f5390ef268cfdefae40ec12",
+    "version": 1
+  },
+  {
+    "ref": "lucasboesen/name-that-llm-electra-large-weights",
+    "http": 200,
+    "fetched_at_utc": "2026-10-27T13:26:23.618835+00:00",
+    "source_sha256": "982902a437faeb4e394d596ffd45aa1e443a196d337de1f534778ce1deab9e3e",
+    "version": 1
+  },
+  {
+    "ref": "lucasboesen/name-that-llm-desklib-weights",
+    "http": 200,
+    "fetched_at_utc": "2026-10-27T13:26:23.842813+00:00",
+    "source_sha256": "4975b115df0edcb520efbba5604ba2f89f3e17b9ad16cecc8f4c93e2e9eaff7b",
+    "version": 1
+  },
+  {
+    "ref": "lucasboesen/name-that-llm-train-lora24-s7",
+    "http": 200,
+    "fetched_at_utc": "2026-10-27T13:26:26.186598+00:00",
+    "source_sha256": "cbbedd0507aaba223b1f2c46f9bf6a0ee2062ce3c2e11dc64effd3e717e4fd94",
+    "version": 1
+  },
+  {
+    "ref": "lucasboesen/name-that-llm-train-tokattn",
+    "http": 200,
+    "fetched_at_utc": "2026-10-27T13:26:27.725064+00:00",
+    "source_sha256": "173c6a3a6e369ab27aabec8ae203d1c5f7135bc6f7b35f3a5643950606f9820f",
+    "version": 1
+  },
+  {
+    "ref": "lucasboesen/name-that-llm-train-tokattn2",
+    "http": 200,
+    "fetched_at_utc": "2026-10-27T13:26:26.372589+00:00",
+    "source_sha256": "ed00e67988f7161714679531eba8f468d066e23f9e0107faee273183f9569743",
+    "version": 1
+  },
+  {
+    "ref": "vnton37nguyn/ntl-train-lora-qwen25-instyle",
+    "http": 200,
+    "fetched_at_utc": "2026-10-27T13:26:27.475058+00:00",
+    "source_sha256": "bacc544956c4f30b5fd01e19429a5fe37a3e63c46de6b3733100b5370874011b",
+    "version": 2
+  },
+  {
+    "ref": "avazaku/name-that-llm-verified-llama-asset-cache",
+    "http": 200,
+    "fetched_at_utc": "2026-10-27T13:26:27.928379+00:00",
+    "source_sha256": "7b5bcae4b8bc2324a7ba997f8b90216b7bf323fcb055ddfa6c0bf9ea29ca0a0f",
+    "version": 1
+  },
+  {
+    "ref": "avazaku/name-that-llm-nlm-v27-reproduction",
+    "http": 404,
+    "fetched_at_utc": "2026-10-27T13:26:28.835154+00:00",
+    "error": "no public source"
+  },
+  {
+    "ref": "dhruvtibarewal/nlm-v27",
+    "http": 200,
+    "fetched_at_utc": "2026-10-27T13:26:31.733860+00:00",
+    "source_sha256": "c57238c44d772ad591ae527262dc3f2d63ab92d32c2c7fb31e4d3ab5f9a5076f",
+    "version": 1
+  }
+]

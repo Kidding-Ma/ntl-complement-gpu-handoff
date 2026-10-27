@@ -1,0 +1,27 @@
+{
+  "source": "https://www.kaggle.com/code/mohammedafreedpasha/name-that-llm-solution",
+  "version": 25,
+  "files": {
+    "references/upstream/cell_01.py": "6c5401495f0568d1acc58ccc75ceb24176fe2c82b4991cf27c6f46ffcf25914a",
+    "references/upstream/cell_02.py": "fc2ef42acc3cb5c231f2d914ce4d3848eff6f078cdf16fa8d390218e74afbc3f",
+    "references/upstream/cell_03.py": "a88443c177056a9b131c2256f25c12b883aacdeca3d10956c40a9b9c8e89f150",
+    "references/upstream/cell_04.py": "6aaecdd60873d0b88f4217f50388fde2987c44c0ac584c989eef93ffc955a227",
+    "references/upstream/cell_05.py": "3d51409c822f30a0f5996429f394f72bff844924eadfb9ea3c6713e90d9d6013",
+    "references/upstream/cell_06.py": "d73d35539ec3dee1ca9b100279f7739032f06f7d3ecb6034ec0dbcf7293080db",
+    "references/upstream/cell_00.md": "e5a16f8afe450d97db63fa3935ac6a49bb4494c4ed01822bd57132ebdea5ce80",
+    "references/upstream/source.ipynb": "846a6da9e3d4a183e9b92e5e7f724c9bcd6e61189c3792a151f509d88cfc239e",
+    "references/upstream/metadata.json": "b9959de67bacd412817464d47fe85c8b7b0790f38228c48a8c9491c1d09b9cae",
+    "references/upstream/api_response.json": "4cdebbe24c58e43ab895593d2076b4cfb2d49fe8ae79604649fa46735b0d20b1",
+    "src/comp_stack.py": "91f107b4fd3477da75720d8c3cedbb2e739fcd014ba19014f00cc2ab238ef06b",
+    "src/gauss.py": "908b57113f1a7b8ebdbf204c6be87cbc385f765ba50ac07b4e270c64b7cf1000",
+    "src/infer.py": "4c93832f1615f50f5382afd4e94c841a9c1ed9cd1ac555cfc06d02b840d8c1f1"
+  },
+  "cell_sha256": {
+    "1": "30900e41f6b618d7e49d598a53d4e847717f1cb2d6f778291ce27e94b3a53053",
+    "2": "b53e305fd7a755d138f931c55ac5f3762ed3978d73a65594b5ce2523fdf165ff",
+    "3": "219900bdc7d087f734a6a152b65b3ed515249afab1d82cad7915c0a41fd02adf",
+    "4": "f1bb8c65e926f0fde39e384cd500aa98162527492251dd63651e3f78b29232bf",
+    "5": "16f3076335718c090271e42a36fcd4efdf3cefdb5197f83a4be75947dc75ace3",
+    "6": "b23477b9e23083ef3cccc64c3b26c85de11211a180f35d22402e59426dacbb12"
+  }
+}

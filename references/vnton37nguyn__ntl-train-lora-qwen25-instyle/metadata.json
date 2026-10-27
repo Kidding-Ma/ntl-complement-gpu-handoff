@@ -1,0 +1,52 @@
+{
+  "languageNullable": "python",
+  "kernelTypeNullable": "script",
+  "isPrivateNullable": false,
+  "enableGpuNullable": true,
+  "enableTpuNullable": false,
+  "enableInternetNullable": false,
+  "currentVersionNumberNullable": 2,
+  "dockerImageNullable": "gcr.io/kaggle-private-byod/python@sha256:2757e0c7d1e0a9cb43da657b97e223c321a98f5014bdf64f44f2f6b083ad2b2f",
+  "machineShapeNullable": "NvidiaTeslaT4",
+  "id": 139394335,
+  "ref": "vnton37nguyn/ntl-train-lora-qwen25-instyle",
+  "title": "NTL train LoRA qwen25 instyle",
+  "author": "Travis Nguyen",
+  "slug": "ntl-train-lora-qwen25-instyle",
+  "lastRunTime": "2026-10-24T13:26:26.9064322Z",
+  "language": "python",
+  "hasLanguage": true,
+  "kernelType": "script",
+  "hasKernelType": true,
+  "isPrivate": false,
+  "hasIsPrivate": true,
+  "enableGpu": true,
+  "hasEnableGpu": true,
+  "enableTpu": false,
+  "hasEnableTpu": true,
+  "enableInternet": false,
+  "hasEnableInternet": true,
+  "categoryIds": [
+    "gpu"
+  ],
+  "datasetDataSources": [
+    "seyitkaangunes/ntl-extra-api-passages",
+    "abdullah1afify/ntl-generations",
+    "dophuchung/ntl-proxy-generations",
+    "lucasboesen/ntl-free-proxy-generations"
+  ],
+  "kernelDataSources": [],
+  "competitionDataSources": [
+    "name-that-llm"
+  ],
+  "modelDataSources": [
+    "qwen-lm/qwen2.5/Transformers/7b/1"
+  ],
+  "totalVotes": 0,
+  "currentVersionNumber": 2,
+  "hasCurrentVersionNumber": true,
+  "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:2757e0c7d1e0a9cb43da657b97e223c321a98f5014bdf64f44f2f6b083ad2b2f",
+  "hasDockerImage": true,
+  "machineShape": "NvidiaTeslaT4",
+  "hasMachineShape": true
+}

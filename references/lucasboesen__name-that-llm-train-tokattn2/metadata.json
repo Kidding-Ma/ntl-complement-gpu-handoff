@@ -1,0 +1,49 @@
+{
+  "languageNullable": "python",
+  "kernelTypeNullable": "notebook",
+  "isPrivateNullable": false,
+  "enableGpuNullable": true,
+  "enableTpuNullable": false,
+  "enableInternetNullable": false,
+  "currentVersionNumberNullable": 1,
+  "dockerImageNullable": "gcr.io/kaggle-private-byod/python@sha256:2757e0c7d1e0a9cb43da657b97e223c321a98f5014bdf64f44f2f6b083ad2b2f",
+  "machineShapeNullable": "NvidiaTeslaT4",
+  "id": 138997255,
+  "ref": "lucasboesen/name-that-llm-train-tokattn2",
+  "title": "name-that-llm-train-tokattn2",
+  "author": "Lucas Boesen",
+  "slug": "name-that-llm-train-tokattn2",
+  "lastRunTime": "2026-10-24T13:26:26.006163Z",
+  "language": "python",
+  "hasLanguage": true,
+  "kernelType": "notebook",
+  "hasKernelType": true,
+  "isPrivate": false,
+  "hasIsPrivate": true,
+  "enableGpu": true,
+  "hasEnableGpu": true,
+  "enableTpu": false,
+  "hasEnableTpu": true,
+  "enableInternet": false,
+  "hasEnableInternet": true,
+  "categoryIds": [
+    "gpu"
+  ],
+  "datasetDataSources": [],
+  "kernelDataSources": [
+    "lucasboesen/name-that-llm-extract-encoders2"
+  ],
+  "competitionDataSources": [
+    "name-that-llm"
+  ],
+  "modelDataSources": [
+    "qwen-lm/qwen-3/Transformers/8b-base/1"
+  ],
+  "totalVotes": 2,
+  "currentVersionNumber": 1,
+  "hasCurrentVersionNumber": true,
+  "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:2757e0c7d1e0a9cb43da657b97e223c321a98f5014bdf64f44f2f6b083ad2b2f",
+  "hasDockerImage": true,
+  "machineShape": "NvidiaTeslaT4",
+  "hasMachineShape": true
+}
