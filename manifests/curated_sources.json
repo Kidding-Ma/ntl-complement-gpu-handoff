@@ -1,0 +1,300 @@
+{
+  "date": "2026-10-28",
+  "selection": "Useful local artifacts only; existing upstream snapshots remain unchanged",
+  "files": [
+    {
+      "path": "verified/score_0636/ntl_complement_fixed.ipynb",
+      "local_source": "Received-NTL-Complement-20261028/ntl_complement_fixed.ipynb",
+      "sha256": "06b57cb41cf59b70678271877b7a08a748ddf6f7d5216aaad22485ac3e2a92f0",
+      "reason": "Actual scored baseline source, input references and score evidence"
+    },
+    {
+      "path": "verified/score_0636/kernel-metadata.json",
+      "local_source": "Received-NTL-Complement-20261028/kernel-metadata.json",
+      "sha256": "8cb43230c7295a7cd70dfd3a7b1a6ce08a91c0dfcba0663685c1417b10f5aa61",
+      "reason": "Actual scored baseline source, input references and score evidence"
+    },
+    {
+      "path": "verified/score_0636/MODEL_SOURCES.md",
+      "local_source": "Received-NTL-Complement-20261028/MODEL_SOURCES.md",
+      "sha256": "64cc0e311d4d3c2d4a09963970ae23c2727b4bbdb0c2e7f1afb8eaa6deb990c4",
+      "reason": "Actual scored baseline source, input references and score evidence"
+    },
+    {
+      "path": "verified/score_0636/RESULTS.md",
+      "local_source": "Received-NTL-Complement-20261028/RESULTS.md",
+      "sha256": "211693ae70de70c72336f59507a832ba2e678bf037269afa51c24141b652f88f",
+      "reason": "Actual scored baseline source, input references and score evidence"
+    },
+    {
+      "path": "verified/score_0636/submission_status.json",
+      "local_source": "Received-NTL-Complement-20261028/submission_status.json",
+      "sha256": "27ef1d7cc656b1a2ba7549b9ea91253b09113c28c59a160c16339eabf9190355",
+      "reason": "Actual scored baseline source, input references and score evidence"
+    },
+    {
+      "path": "verified/score_0636/submission_receipt.json",
+      "local_source": "Received-NTL-Complement-20261028/submission_receipt.json",
+      "sha256": "b2b9de69840b7659fc6410fb0fbcbc3d091a83ac03817610e9220c0470d3de3d",
+      "reason": "Actual scored baseline source, input references and score evidence"
+    },
+    {
+      "path": "verified/score_0636/delivery_verification.json",
+      "local_source": "Received-NTL-Complement-20261028/delivery_verification.json",
+      "sha256": "60ee9da7709eeaf832462595c547598e58533bca8c68c74ce04a5d8ae5159f5b",
+      "reason": "Actual scored baseline source, input references and score evidence"
+    },
+    {
+      "path": "verified/score_0636/independent-validation.json",
+      "local_source": "Received-NTL-Complement-20261028/kaggle-full-v1-evidence/independent-validation.json",
+      "sha256": "62dc585c002d0402ab123518f023321bc5c31fbecc493ebc12da6817068c67a3",
+      "reason": "Public-preview numerical validation and measured runtime environment"
+    },
+    {
+      "path": "verified/score_0636/runtime_full.json",
+      "local_source": "Received-NTL-Complement-20261028/kaggle-full-v1-evidence/runtime_full.json",
+      "sha256": "1c1dcc297ab4cabd42e99f7e11db0c6454e82c728c15750ab26d0d5dbc1ca710",
+      "reason": "Public-preview numerical validation and measured runtime environment"
+    },
+    {
+      "path": "methods/lora24/received/oof_report.json",
+      "local_source": "Received-LoRA24-20261023/deliverables/oof_report.json",
+      "sha256": "5f9d82357d14a542b1ded468928f8ef6e801fd1e66438461669b74547b856c9e",
+      "reason": "Independent trained member results and compatibility fixes; ensemble not scored"
+    },
+    {
+      "path": "methods/lora24/received/final_parity.json",
+      "local_source": "Received-LoRA24-20261023/deliverables/final_parity.json",
+      "sha256": "0bca7ee00f1c199a6abc067b0e7df53477e3f7b33f32eb97e639fc200bef92a2",
+      "reason": "Independent trained member results and compatibility fixes; ensemble not scored"
+    },
+    {
+      "path": "methods/lora24/received/REPAIR_NOTES.md",
+      "local_source": "Received-LoRA24-20261023/deliverables/REPAIR_NOTES.md",
+      "sha256": "042482a77d01a1ce250115b7aac0eadbbb7d54f94914f0fb3ee1a27f8d9c54ef",
+      "reason": "Independent trained member results and compatibility fixes; ensemble not scored"
+    },
+    {
+      "path": "methods/lora24/received/own_lora24_ensemble_fixed.ipynb",
+      "local_source": "Received-LoRA24-20261023/deliverables/own_lora24_ensemble_fixed.ipynb",
+      "sha256": "94cb8f9e634b24bdefde33cb304d60efa07799e3dd3513014515bdff11c8a862",
+      "reason": "Independent trained member results and compatibility fixes; ensemble not scored"
+    },
+    {
+      "path": "methods/lora24/received/ensemble_fixed.py",
+      "local_source": "Received-LoRA24-20261023/deliverables/ensemble_fixed.py",
+      "sha256": "e849d582c893bee8a58e64d28dfc7c1712a91c76489eb80192371a5271f4dcef",
+      "reason": "Independent trained member results and compatibility fixes; ensemble not scored"
+    },
+    {
+      "path": "methods/lora24/received/gaussian_fixed.py",
+      "local_source": "Received-LoRA24-20261023/deliverables/gaussian_fixed.py",
+      "sha256": "31a021bff94b68698e9b1d1bbfcc2b254b1ad85d0999cc185dd9d8026bf5059e",
+      "reason": "Independent trained member results and compatibility fixes; ensemble not scored"
+    },
+    {
+      "path": "methods/lora24/received/preflight_fixed.py",
+      "local_source": "Received-LoRA24-20261023/deliverables/preflight_fixed.py",
+      "sha256": "a62e647a20223651a55fe3ca8d113bbb8abad56693509d72b58b1271f5b8f5a4",
+      "reason": "Independent trained member results and compatibility fixes; ensemble not scored"
+    },
+    {
+      "path": "methods/lora24/received/repair_validation.json",
+      "local_source": "Received-LoRA24-20261023/deliverables/repair_validation.json",
+      "sha256": "4c225b5b840082ee1b429a5e83ea08b223b9ad66a403b9b0a013739bd0eddb86",
+      "reason": "Independent trained member results and compatibility fixes; ensemble not scored"
+    },
+    {
+      "path": "methods/lora24/received/training_meta.json",
+      "local_source": "Received-LoRA24-20261023/deliverables/own_lora24/final/training_meta.json",
+      "sha256": "f9902576468d0447be9fee331134691c49bdde4e90f18b16b107a4c404b4d590",
+      "reason": "Training configuration, source hashes and checkpoint integrity contract"
+    },
+    {
+      "path": "methods/lora24/received/COMPLETE.json",
+      "local_source": "Received-LoRA24-20261023/deliverables/own_lora24/final/COMPLETE.json",
+      "sha256": "5016f8c6b417258bd1fe2ce1a28934ba4ebf3d525f2cdb1b658f6e7d5520d1c0",
+      "reason": "Training configuration, source hashes and checkpoint integrity contract"
+    },
+    {
+      "path": "checkpoints/own_lora24_checkpoint.zip",
+      "local_source": "Received-LoRA24-20261023/deliverables/own_lora24_checkpoint.zip",
+      "sha256": "3d84cdadc2c2741c21c60cdead22a57076aca88563631da9719c4bba998de28b",
+      "reason": "Usable independently trained adapter, heads and tokenizer; Git LFS storage"
+    },
+    {
+      "path": "checkpoints/own_lora24_checkpoint.zip.sha256.json",
+      "local_source": "Received-LoRA24-20261023/deliverables/own_lora24_checkpoint.zip.sha256.json",
+      "sha256": "1b21446f97481931196a94b245629bae1939898d5c8615a800c485b3f7cc82db",
+      "reason": "Integrity of the optional trained checkpoint"
+    },
+    {
+      "path": "methods/lora24/ntl/__init__.py",
+      "local_source": "NameThatLLM-LoRA-Publish/ntl/__init__.py",
+      "sha256": "b7ae7c894d2708eb3e60c4ae483046662cde1b9ddcde168613fcd5eb47e7ed66",
+      "reason": "LoRA24 training, validation, inference and checkpoint utilities"
+    },
+    {
+      "path": "methods/lora24/ntl/checkpoint.py",
+      "local_source": "NameThatLLM-LoRA-Publish/ntl/checkpoint.py",
+      "sha256": "8791f2045b5320f2497bb7dddeb54ee3b3471b1be1eef62ea4b23ca9eaf2dcd5",
+      "reason": "LoRA24 training, validation, inference and checkpoint utilities"
+    },
+    {
+      "path": "methods/lora24/ntl/common.py",
+      "local_source": "NameThatLLM-LoRA-Publish/ntl/common.py",
+      "sha256": "d0a1e14f1921c32209e7ec56567ba715485924036be56f5ab86a260764d8bee2",
+      "reason": "LoRA24 training, validation, inference and checkpoint utilities"
+    },
+    {
+      "path": "methods/lora24/ntl/gpu.py",
+      "local_source": "NameThatLLM-LoRA-Publish/ntl/gpu.py",
+      "sha256": "aec72809b8f5d7b1c8a4adc1e634bb888b5e0861ecd106b5fb8514e1ab42aa06",
+      "reason": "LoRA24 training, validation, inference and checkpoint utilities"
+    },
+    {
+      "path": "methods/lora24/scripts/bundle_checkpoint.py",
+      "local_source": "NameThatLLM-LoRA-Publish/scripts/bundle_checkpoint.py",
+      "sha256": "ac37219b406c65e424c6bd1ad0f3f24fd2a003b3beb24e46f24c09e1b26c63e6",
+      "reason": "LoRA24 training, validation, inference and checkpoint utilities"
+    },
+    {
+      "path": "methods/lora24/scripts/check_parity.py",
+      "local_source": "NameThatLLM-LoRA-Publish/scripts/check_parity.py",
+      "sha256": "807bf4f88328363d721bb474d2462927c9781b2dd9fa3960d6e7e23a020d5a5d",
+      "reason": "LoRA24 training, validation, inference and checkpoint utilities"
+    },
+    {
+      "path": "methods/lora24/scripts/evaluate_oof.py",
+      "local_source": "NameThatLLM-LoRA-Publish/scripts/evaluate_oof.py",
+      "sha256": "287c28eb6e028c6997a04afbe1be1cda604f1c12663a56a68d52130a71a75f81",
+      "reason": "LoRA24 training, validation, inference and checkpoint utilities"
+    },
+    {
+      "path": "methods/lora24/scripts/fetch_model.py",
+      "local_source": "NameThatLLM-LoRA-Publish/scripts/fetch_model.py",
+      "sha256": "130bc8e817e207d00aa3a4517f58eadaa60bfde9713c2b2367d99e1b99559a61",
+      "reason": "LoRA24 training, validation, inference and checkpoint utilities"
+    },
+    {
+      "path": "methods/lora24/scripts/patch_notebook.py",
+      "local_source": "NameThatLLM-LoRA-Publish/scripts/patch_notebook.py",
+      "sha256": "e73610df8333f9bc705c49f1c68488e00693a35ac18016f7424e70c7169b4b61",
+      "reason": "LoRA24 training, validation, inference and checkpoint utilities"
+    },
+    {
+      "path": "methods/lora24/scripts/predict.py",
+      "local_source": "NameThatLLM-LoRA-Publish/scripts/predict.py",
+      "sha256": "08d940102c9bfe64d0e985c0aadea39b56c48cd89e7e8dd4bbe07617debb55e1",
+      "reason": "LoRA24 training, validation, inference and checkpoint utilities"
+    },
+    {
+      "path": "methods/lora24/scripts/preflight.py",
+      "local_source": "NameThatLLM-LoRA-Publish/scripts/preflight.py",
+      "sha256": "8aded29a5fb8abcae22bafa6d94a969e5310b5b27df66507e5ff3bc8c4cf7b72",
+      "reason": "LoRA24 training, validation, inference and checkpoint utilities"
+    },
+    {
+      "path": "methods/lora24/scripts/prepare.py",
+      "local_source": "NameThatLLM-LoRA-Publish/scripts/prepare.py",
+      "sha256": "9a06039c99922191a92b92dff2bef0e2a92238ac938d9fd59245c2363a5cf946",
+      "reason": "LoRA24 training, validation, inference and checkpoint utilities"
+    },
+    {
+      "path": "methods/lora24/scripts/run_jobs.py",
+      "local_source": "NameThatLLM-LoRA-Publish/scripts/run_jobs.py",
+      "sha256": "4ea6b04c1d9f3af09abb39f265fd067c381dc9daa5637e7d8497aa6c6d4a4a98",
+      "reason": "LoRA24 training, validation, inference and checkpoint utilities"
+    },
+    {
+      "path": "methods/lora24/scripts/train.py",
+      "local_source": "NameThatLLM-LoRA-Publish/scripts/train.py",
+      "sha256": "6e70addb1be6df547bbee2d76cfc8e188fd14aaa0dcba25eb42991c85d45c7ec",
+      "reason": "LoRA24 training, validation, inference and checkpoint utilities"
+    },
+    {
+      "path": "methods/lora24/scripts/validate_checkpoint.py",
+      "local_source": "NameThatLLM-LoRA-Publish/scripts/validate_checkpoint.py",
+      "sha256": "30adae6b71bd9c016cdfe4a823bb8b6a9999d8750de33f1db7a6e7dd6d55ca47",
+      "reason": "LoRA24 training, validation, inference and checkpoint utilities"
+    },
+    {
+      "path": "methods/lora24/configs/train.json",
+      "local_source": "NameThatLLM-LoRA-Publish/configs/train.json",
+      "sha256": "ae65297b34e3a7f2404701eeb8b7af783a40b2d3fe066aeee185ab42bc3b1850",
+      "reason": "Configuration, dependencies and original license"
+    },
+    {
+      "path": "methods/lora24/requirements-gpu.txt",
+      "local_source": "NameThatLLM-LoRA-Publish/requirements-gpu.txt",
+      "sha256": "111c35625304f1471e5a1bef349bc5701307a8ce099b46cd60b72db0caa61c53",
+      "reason": "Configuration, dependencies and original license"
+    },
+    {
+      "path": "methods/lora24/requirements-cpu.txt",
+      "local_source": "NameThatLLM-LoRA-Publish/requirements-cpu.txt",
+      "sha256": "4646b966e42eaff5ff3e447c1a4a46f21dd5f105c1d1909a28f0825ac577e3a9",
+      "reason": "Configuration, dependencies and original license"
+    },
+    {
+      "path": "methods/lora24/LICENSE",
+      "local_source": "NameThatLLM-LoRA-Publish/LICENSE",
+      "sha256": "b6ddc6d597a1042e1e8b7b3105355d607cd5120893b161276a1c2aa197cf3e23",
+      "reason": "Configuration, dependencies and original license"
+    },
+    {
+      "path": "methods/cpu/style_aware_runner.py",
+      "local_source": "NameThatLLM-GoldRelease/scripts/style_aware_runner.py",
+      "sha256": "b12c34a2658727874267891f4d341d7dcf522c7dbb04614c9c6cf4e57777e58e",
+      "reason": "Reusable CPU control, text views, style features and data audit"
+    },
+    {
+      "path": "methods/cpu/kaggle_submit.py",
+      "local_source": "NameThatLLM-GoldRelease/scripts/kaggle_submit.py",
+      "sha256": "f5c056befff9aab99b30dbf956d78ccbd2f61508cf49bf521cd4f89300e8e7ad",
+      "reason": "Reusable CPU control, text views, style features and data audit"
+    },
+    {
+      "path": "methods/cpu/cpu_blend_inference.py",
+      "local_source": "NameThatLLM-GoldRelease/scripts/cpu_blend_inference.py",
+      "sha256": "de29974986aca37fe4a944422e514e448bdefde678a44d9e5a54e49e46c0cb2b",
+      "reason": "Reusable CPU control, text views, style features and data audit"
+    },
+    {
+      "path": "methods/cpu/audit_dataset.py",
+      "local_source": "NameThatLLM-GoldRelease/scripts/audit_dataset.py",
+      "sha256": "0b77b262b4cc39038b903871df9fbaa675f6daa74d5926764dafc03882cf7fa3",
+      "reason": "Reusable CPU control, text views, style features and data audit"
+    },
+    {
+      "path": "methods/cpu/requirements.txt",
+      "local_source": "NameThatLLM-GoldRelease/requirements-cpu.txt",
+      "sha256": "b0658fe887c75c506db2317ee5e86f69328f86193cb38135624b1be743e0545b",
+      "reason": "CPU dependencies"
+    },
+    {
+      "path": "methods/cpu/evidence/style_aware_local_metrics.json",
+      "local_source": "NameThatLLM-GoldRelease/evidence/metrics/style_aware_local_metrics.json",
+      "sha256": "d6c5f4e1404c55e75ab44ab5d11f808aa7b71be04a50abfb3ebae72337f2a22a",
+      "reason": "Measured local CPU scores and diagnostic limitations"
+    },
+    {
+      "path": "methods/cpu/evidence/cpu_numeric_style_local_metrics.json",
+      "local_source": "NameThatLLM-GoldRelease/evidence/metrics/cpu_numeric_style_local_metrics.json",
+      "sha256": "beaad364cce5ddf6fdf407cd8edf1806718563bc37363858d7ba7f61b49b315f",
+      "reason": "Measured local CPU scores and diagnostic limitations"
+    },
+    {
+      "path": "methods/cpu/evidence/cpu_blend_probe_results.json",
+      "local_source": "NameThatLLM-GoldRelease/evidence/metrics/cpu_blend_probe_results.json",
+      "sha256": "e58446cacf92a8f6f634f02e2938a8c205b625d0232d197cb305549c35ba7705",
+      "reason": "Measured local CPU scores and diagnostic limitations"
+    },
+    {
+      "path": "evidence/v25_source_audit.md",
+      "local_source": "name-that-llm-solution-handoff/docs/SOURCE_AUDIT.md",
+      "sha256": "e062f92abb90c3581fba57326af2f5400a8bb5f0c5f3f1fac8b3a4c059ecfd31",
+      "reason": "Alternative larger public ensemble: exact code/prose differences and unverified score"
+    }
+  ]
+}

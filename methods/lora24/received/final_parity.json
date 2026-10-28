@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "mean_relative_feature_error": 0.0,
+  "max_absolute_feature_error": 0.0,
+  "threshold": 0.02,
+  "train_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+  "job": "final",
+  "smoke_only": false,
+  "checkpoint_marker_sha256": "5016f8c6b417258bd1fe2ce1a28934ba4ebf3d525f2cdb1b658f6e7d5520d1c0",
+  "probability_shape": [
+    3,
+    18
+  ]
+}

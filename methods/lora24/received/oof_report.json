@@ -1,0 +1,34 @@
+{
+  "status": "COMPLETE",
+  "train_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+  "folds": [
+    {
+      "job": "fold0",
+      "rows": 539,
+      "plain_balanced_accuracy": 0.49303959131545333
+    },
+    {
+      "job": "fold1",
+      "rows": 540,
+      "plain_balanced_accuracy": 0.47777777777777775
+    },
+    {
+      "job": "fold2",
+      "rows": 540,
+      "plain_balanced_accuracy": 0.4907407407407407
+    },
+    {
+      "job": "fold3",
+      "rows": 540,
+      "plain_balanced_accuracy": 0.4574074074074075
+    },
+    {
+      "job": "fold4",
+      "rows": 540,
+      "plain_balanced_accuracy": 0.47777777777777775
+    }
+  ],
+  "plain_oof_balanced_accuracy": 0.47934128759632105,
+  "scope": "Own plain head only; no centered-head validation or ensemble tuning performed",
+  "leaderboard_score": null
+}

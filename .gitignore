@@ -9,6 +9,7 @@ __pycache__/
 assets/
 outputs/
 *.zip
+!checkpoints/own_lora24_checkpoint.zip
 *.tar
 *.tar.gz
 *.safetensors

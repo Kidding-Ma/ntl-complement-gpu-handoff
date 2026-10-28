@@ -1,0 +1,5 @@
+{
+  "sha256": "3d84cdadc2c2741c21c60cdead22a57076aca88563631da9719c4bba998de28b",
+  "layout": "own_lora24/final",
+  "identity": "independent retraining; not verified identical to lightningv08 checkpoint"
+}

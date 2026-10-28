@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "job": "final",
+  "train_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+  "files": {
+    "adapter/README.md": "546e5a84321371d3da632c19280f7bb884ae862362f2be732cec4596f907d3c3",
+    "adapter/adapter_config.json": "410a0a07905ec5f39ef1eab7011e18b3f5812348fa9297380406a0e89145702d",
+    "adapter/adapter_model.safetensors": "9fb06cd16f8123fd2aaef170d58f3c65bdb294d1ac574f1d6df741ac734845f4",
+    "anchor_features.npz": "c3c54330088084c1845dfc23ed825a76257f688857da4923cc68a80e37dc18ce",
+    "base_config/config.json": "e2a0918bba93924da2c835f98904d0b951e339e1618dcbae4bcc711adde2a648",
+    "heads.safetensors": "28d43afbf1550466c99817fc3da4c2999fe87fdc4a1a8497dbd82de2abf5f4d3",
+    "readouts.npz": "727c665559c75c982e3d005a7d9c66728843168136978fb7828c7c4252546bb0",
+    "tokenizer/chat_template.jinja": "87a2728cb8dc9fe424d624542f6060ec05a1d285ebbec578bb078900e33396b5",
+    "tokenizer/tokenizer.json": "b3744d3112b8c3d04760859bfdbf9a7ce00d5539512b5fc5d5bfb3f76eec0d9d",
+    "tokenizer/tokenizer_config.json": "cbea7bca9904d56693d2226b00fd564e3be053609d1e50f8f1885510f0f6e790",
+    "training_meta.json": "f9902576468d0447be9fee331134691c49bdde4e90f18b16b107a4c404b4d590",
+    "training_report.json": "651857e82df64c09d443155a8b7a3cc1d6783db6c25b6d57cb12785eb3dd90e0",
+    "validation_features.npz": "205fe4a58f95ecb0cb9c48020a99f5b9d29ab716874f633abd55bcb941f3b976"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "recipe": "char35_styletext_numeric__svc_0p5",
+  "validation": "5-fold GroupKFold(prompt_id), fold-local TF-IDF and StandardScaler",
+  "pooled_oof_balanced_accuracy": 0.38893611732537914,
+  "pooled_oof_accuracy": 0.3890329751759911,
+  "pooled_oof_macro_f1": 0.3708401433423916,
+  "folds": [
+    {"fold": 0, "n_train": 2159, "n_valid": 540, "balanced_accuracy": 0.3833333333333333, "prompt_overlap": 0},
+    {"fold": 1, "n_train": 2159, "n_valid": 540, "balanced_accuracy": 0.3574074074074074, "prompt_overlap": 0},
+    {"fold": 2, "n_train": 2159, "n_valid": 540, "balanced_accuracy": 0.40185185185185185, "prompt_overlap": 0},
+    {"fold": 3, "n_train": 2159, "n_valid": 540, "balanced_accuracy": 0.40925925925925927, "prompt_overlap": 0},
+    {"fold": 4, "n_train": 2160, "n_valid": 539, "balanced_accuracy": 0.39284802043422734, "prompt_overlap": 0}
+  ],
+  "features": {
+    "tfidf_views": ["char_3_5", "word_1_3", "shape_2_6", "function_1_3"],
+    "numeric_style_statistics": 25,
+    "numeric_style_weight": 0.3
+  },
+  "classifier": {"name": "LinearSVC", "C": 0.5, "max_iter": 5000, "random_state": 42},
+  "train_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+  "n_train": 2699,
+  "n_test_visible": 3,
+  "visible_test_is_not_hidden_test": true,
+  "source": "private local run; no raw text, OOF arrays, or submission is included"
+}

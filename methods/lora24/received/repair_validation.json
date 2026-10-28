@@ -1,0 +1,11 @@
+{
+  "notebook_sha256": "8f3724b4343fb587b14066bee5ad630bd8e12b271838634cc63fc280768cd56d",
+  "code_cells": 3,
+  "syntax": "PASS including embedded Gaussian source",
+  "local_checkpoint_contract": "PASS",
+  "resolver_regression": "PASS: config-only snapshot excluded, missing shard rejected, correct weighted base selected, missing model fails",
+  "kaggle_import": "NOT COMPLETED: browser control unavailable",
+  "gpu_parity": "NOT RUN",
+  "full_ensemble": "NOT RUN",
+  "competition_submission": "NOT SUBMITTED"
+}

@@ -1,0 +1,8 @@
+# Install a CUDA-compatible PyTorch wheel separately using the official PyTorch selector.
+# These ranges are starting constraints, NOT a GPU-tested lockfile. Freeze versions after smoke passes.
+-r requirements-cpu.txt
+transformers>=5.0,<6
+peft>=0.18,<1
+accelerate>=1.10,<2
+safetensors>=0.6,<1
+pyarrow>=18

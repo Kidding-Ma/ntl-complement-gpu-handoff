@@ -1,34 +1,28 @@
-# NTL Part Two Complement · GPU AI 交接工作区
+# Name That LLM：多方案实验计划与有效成果
 
-目标：复现 [fleongg/ntl-part-two-complement](https://www.kaggle.com/code/fleongg/ntl-part-two-complement)，修复输入权限、模型加载和完整推理问题，交回可在 Kaggle 隐藏测试重跑的 Notebook。**请 AI 先读 [AI_START_HERE.md](AI_START_HERE.md)。**
+**主要交付：[多种可行方法的详细方案](docs/MULTI_METHOD_PLAN_ZH.md)。** 包括独立新方法、公开复现、数据路线及融合，不限定为改进已有方法。
 
-关键词：`NTL Part Two Complement`、`0.636`、`legacy_recovery_manifest.json`、`lora24_public`、`Qwen3.5`、`tokattn_q35`、`HF_DEACTIVATE_ASYNC_LOAD`、`ATLAS`、`Sinkhorn`、`submission.parquet`。
+比赛：[Name That LLM](https://www.kaggle.com/competitions/name-that-llm)。直接提供有用的源码、权重和有效成绩证据，不以账号提交页面或排行榜代替资料。
 
-## 仓库交付范围
+| 内容 | 入口 | 状态 |
+|---|---|---|
+| 八条路线的步骤、资源、对照和取舍 | [详细方案](docs/MULTI_METHOD_PLAN_ZH.md) | 本次主要交付；三个独立建模方向尚待实现/实验 |
+| 已评分完整 Notebook 与回执 | [有效提交 0.636](verified/score_0636/README.md) | 隐藏重跑 COMPLETE，Public Score 0.636 |
+| 独立 LoRA24 权重与训练代码 | [使用说明](methods/lora24/README.md) | 交付报告 OOF 0.479341，不是 LB；完整逐折预测缺失 |
+| CPU 控制与风格特征 | [CPU 组件](methods/cpu/README.md) | 历史本地分组验证；适合对照和补充 |
+| 另一公开集成的完整代码 | [已有固定分支](https://github.com/Kidding-Ma/ntl-complement-gpu-handoff/tree/debdb0781600566bd4d211ea7e2f324546124d92) | 未实测；文字 0.651 不代表该源码成绩 |
+| 筛选依据与文件来源 | [筛选说明](docs/LOCAL_ASSET_SELECTION.md)、[来源清单](manifests/curated_sources.json) | 排除重复包、截图、缓存、旧提示词和无关材料 |
+| 后续实验的统一输出 | [结果规范](docs/EXPERIMENT_CONTRACT.md) | 保留可信 OOF，支持模型比较和融合 |
 
-- 当前公开 V2 的完整 24 个单元格、原始 Python 导出、作者说明和官方输入元数据。
-- AST 提取的 6 个辅助模块，包括完整 `comp_stack.py`；同名模块以最后一次写入为准，写入顺序有记录。
-- 16 个 Dataset、8 个 Notebook Output、7 个 Model、1 个 Competition 的完整下载清单和 Kaggle 元数据模板。
-- 官方 `train.csv`、三行公开 `test.csv`、`sample_submission.parquet`；来源和 SHA-256 随附。
-- Linux GPU 运行入口、输入预检、下载工具、结果验证器、Notebook schema 修复版，以及既有 Qwen3.5 停滞诊断。
-- 可获取的参考训练/特征提取 Notebook 源码、不可获取项的真实错误记录。
-
-**源码交接完整不等于已包含所有权重。大型基础模型、第三方权重和文本池仍须下载；不能访问的原权重不能凭空补齐。本仓库没有 GPU 跑通证据，也不保证 0.636。** 逐项见 [DEPENDENCIES.md](docs/DEPENDENCIES.md)、[CURRENT_STATE.md](docs/CURRENT_STATE.md)。
-
-## 开始
+只读方案/代码，可跳过可选的大权重：
 
 ```bash
-git clone https://github.com/Kidding-Ma/ntl-complement-gpu-handoff.git
+GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/Kidding-Ma/ntl-complement-gpu-handoff.git
 cd ntl-complement-gpu-handoff
-python scripts/verify_workspace.py
-python scripts/fetch_assets.py --list
-# 然后按 docs/GPU_RUNBOOK.md 准备 Linux GPU、下载输入并执行
 ```
 
-对朋友的 AI：请直接把链接和根目录 `AI_START_HERE.md` 一起给它；不要仅凭 README 判断完成。完整验收要求在任务书内。
+需要复用自训 LoRA24 时，按其说明通过 Git LFS 获取 `checkpoints/own_lora24_checkpoint.zip`。基础模型和其他第三方输入由所列原始渠道下载，不重复托管。
 
-## 重要区别
+`upstream/`、`references/` 和旧 ready Notebook 保留历史原始来源。使用已有已评分基线时，选 `verified/score_0636/ntl_complement_fixed.ipynb`。历史交接文档的状态不覆盖这次收到的有效提交证据。
 
-作者称 0.636 来自 V1 提交 57551442。当前 V2 是发布版本：页面日志显示 CPU、9.1 秒、输出 0 B；API 却保留 enableGpu=true。两者按不同证据记录，均不能证明接收方成功复现。三行公开预测只验证格式，正式成绩需要 Kaggle 隐藏测试重新执行。
-
-第三方代码、模型和数据分别保留原作者及原条款，见 [NOTICE.md](NOTICE.md)。
+本次没有运行新的 GPU 实验或提交比赛。原作者、模型条款及代码许可见 [NOTICE.md](NOTICE.md)。

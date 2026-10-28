@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "updated_date_jst": "2026-10-28",
+  "source_commit": "3b8e3331890281bcf4f41c5c2a37875ca8323811",
+  "kernel": "liuqingmu096/ntl-complement-fixed-3b8e333/1",
+  "saved_run_complete": true,
+  "public_preview_rows": 3,
+  "elapsed_seconds": 2073.331946635,
+  "whole_blend_independently_verified": true,
+  "required_complement_members": [
+    "debv3l",
+    "desk",
+    "electl",
+    "lora20_q25_instyle",
+    "lora24_claude",
+    "lora24_public",
+    "lora24_seed7",
+    "stylegram",
+    "stylometry_lgb",
+    "tokattn_deb",
+    "tokattn_q35",
+    "ultrabert"
+  ],
+  "main_members": [
+    "deberta",
+    "lora_qwen25_14b",
+    "lora_qwen3_14b",
+    "svc"
+  ],
+  "atlas_rows": 3,
+  "competition_submitted": true,
+  "submission_ref": 57706812,
+  "submission_requested_jst": "2026-10-28 01:09:59 JST",
+  "hidden_submission_status": "SubmissionStatus.COMPLETE",
+  "public_score": "0.636",
+  "hidden_test_complete": true,
+  "mounted_recovered_files_sha_verified": 38,
+  "submission_parquet_sha256": "604c7a52a6ae9a4104176401650e32a9f225bd62803bfa7a3f7f71183da426a5"
+}

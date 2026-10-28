@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-21",
+  "data_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+  "validation_context": "Existing 5-fold prompt-grouped OOF score banks; this is a diagnostic blend probe, not a fully nested outer/inner experiment.",
+  "score_banks": {
+    "style_aware_four_view_svc": 0.3844842157593836,
+    "original_char_word_scalar_svc": 0.3704026845637584
+  },
+  "direct_same_oof_scan": {
+    "warning": "The best weight is selected on the same pooled OOF rows and is selection-biased.",
+    "best_transform": "raw or row_softmax (tie at displayed precision)",
+    "best_style_weight": 0.7,
+    "best_balanced_accuracy": 0.39484712900820285
+  },
+  "fold_held_out_weight_probe": {
+    "warning": "For each held-out GroupKFold fold, the weight is selected from the other OOF rows. This is more conservative than the direct scan but is not a complete nested retraining experiment because the existing OOF models may have seen the held-out outer fold while producing predictions for the selection rows.",
+    "raw_margin": {
+      "weights_style": [0.9, 0.7, 0.7, 0.7, 0.675],
+      "fold_balanced_accuracy": [0.36666666666666664, 0.3574074074074074, 0.42037037037037034, 0.41481481481481486, 0.38908045977011496],
+      "mean_balanced_accuracy": 0.3896679438058749
+    },
+    "column_standardized": {
+      "weights_style": [0.625, 0.625, 0.625, 0.575, 0.5],
+      "fold_balanced_accuracy": [0.38703703703703707, 0.37222222222222223, 0.4148148148148148, 0.4037037037037037, 0.3670498084291187],
+      "mean_balanced_accuracy": 0.3889655172413793
+    },
+    "row_softmax": {
+      "weights_style": [0.725, 0.7, 0.725, 0.725, 0.7],
+      "fold_balanced_accuracy": [0.38703703703703707, 0.3574074074074074, 0.4222222222222222, 0.41296296296296303, 0.3872286079182631],
+      "mean_balanced_accuracy": 0.39337164750957854
+    }
+  },
+  "candidate_submission": {
+    "script": "scripts/cpu_blend_inference.py",
+    "style_weight": 0.7,
+    "original_weight": 0.3,
+    "uses_prompt_id_for_inference": false,
+    "uses_test_grouping_or_assignment": false,
+    "recommendation": "Use only as a second CPU Kaggle experiment after submitting the plain style-aware four-view baseline; do not claim the diagnostic BA as a leaderboard guarantee."
+  }
+}

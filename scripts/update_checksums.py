@@ -9,6 +9,8 @@ if __name__=='__main__':
         rel=p.relative_to(ROOT)
         if not p.is_file() or any(x in rel.parts for x in ['.git','__pycache__','.venv','assets','outputs','reports']): continue
         if rel.as_posix()=='manifests/workspace_sha256.json': continue
+        # Optional binary is fetched through LFS; its original SHA is in curated_sources.json.
+        if rel.as_posix()=='checkpoints/own_lora24_checkpoint.zip': continue
         files[rel.as_posix()]=hashlib.sha256(p.read_bytes()).hexdigest()
-    (ROOT/'manifests/workspace_sha256.json').write_text(json.dumps(files,indent=2)+'\n',encoding='utf-8')
+    (ROOT/'manifests/workspace_sha256.json').write_text(json.dumps(files,indent=2)+'\n',encoding='utf-8',newline='\n')
     print('SHA256 inventory:',len(files),'files')

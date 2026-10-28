@@ -1,0 +1,11 @@
+{
+  "requested_utc": "2026-10-27T16:09:59.311853+00:00",
+  "competition": "name-that-llm",
+  "kernel": "liuqingmu096/ntl-complement-fixed-3b8e333/1",
+  "method": "Code competition saved notebook submission; hidden rerun, not 3-row file upload",
+  "description": "NTL fixed3b8e333 V1 all-members preview verified 2026-10-28",
+  "returncode": 0,
+  "stdout": "Submission ref: 57706812\n4 submissions remaining today.\n",
+  "stderr": "",
+  "score_claimed": false
+}

@@ -1,0 +1,22 @@
+{
+  "experiment": "own-qwen3-8b-lora24-v1",
+  "seed": 42,
+  "folds": 5,
+  "epochs": 3,
+  "keep_layers": 24,
+  "pool_layers": [2, 4, 6, 8, 12, 16, 20, 24],
+  "max_text_tokens": 447,
+  "microbatch": 3,
+  "accumulation": 6,
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "head_dropout": 0.1,
+  "adapter_lr": 0.0001,
+  "head_lr": 0.001,
+  "weight_decay": 0.01,
+  "gradient_clip": 1.0,
+  "warmup_fraction": 0.1,
+  "dtype": "float16",
+  "max_overflow_retries": 3
+}

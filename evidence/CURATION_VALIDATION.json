@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-28",
+  "copied_files_hash_verified": 49,
+  "new_python_files_ast_checked": 22,
+  "new_notebook_code_cells_ast_checked": 18,
+  "relative_links_checked": 45,
+  "original_upstream_references_data_unchanged": true,
+  "lora_checkpoint_structure_and_hashes": "PASS",
+  "checkpoint_zip_crc": "PASS",
+  "credential_pattern_scan_selected_text": "PASS",
+  "new_gpu_execution": false,
+  "new_competition_submission": false,
+  "score_evidence_scope": "Received COMPLETE submission 57706812, Public 0.636; not a fresh API refresh",
+  "errors": []
+}

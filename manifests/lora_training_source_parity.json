@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-28",
+  "scope": "Core source hashes versus received training metadata; auxiliary preflight was modified later",
+  "files": [
+    {
+      "file": "methods/lora24/ntl/checkpoint.py",
+      "training_record_sha256": "8791f2045b5320f2497bb7dddeb54ee3b3471b1be1eef62ea4b23ca9eaf2dcd5",
+      "current_sha256": "8791f2045b5320f2497bb7dddeb54ee3b3471b1be1eef62ea4b23ca9eaf2dcd5",
+      "matches": true
+    },
+    {
+      "file": "methods/lora24/ntl/common.py",
+      "training_record_sha256": "d0a1e14f1921c32209e7ec56567ba715485924036be56f5ab86a260764d8bee2",
+      "current_sha256": "d0a1e14f1921c32209e7ec56567ba715485924036be56f5ab86a260764d8bee2",
+      "matches": true
+    },
+    {
+      "file": "methods/lora24/ntl/gpu.py",
+      "training_record_sha256": "aec72809b8f5d7b1c8a4adc1e634bb888b5e0861ecd106b5fb8514e1ab42aa06",
+      "current_sha256": "aec72809b8f5d7b1c8a4adc1e634bb888b5e0861ecd106b5fb8514e1ab42aa06",
+      "matches": true
+    },
+    {
+      "file": "methods/lora24/ntl/__init__.py",
+      "training_record_sha256": "b7ae7c894d2708eb3e60c4ae483046662cde1b9ddcde168613fcd5eb47e7ed66",
+      "current_sha256": "b7ae7c894d2708eb3e60c4ae483046662cde1b9ddcde168613fcd5eb47e7ed66",
+      "matches": true
+    },
+    {
+      "file": "methods/lora24/scripts/bundle_checkpoint.py",
+      "training_record_sha256": "ac37219b406c65e424c6bd1ad0f3f24fd2a003b3beb24e46f24c09e1b26c63e6",
+      "current_sha256": "ac37219b406c65e424c6bd1ad0f3f24fd2a003b3beb24e46f24c09e1b26c63e6",
+      "matches": true
+    },
+    {
+      "file": "methods/lora24/scripts/check_parity.py",
+      "training_record_sha256": "807bf4f88328363d721bb474d2462927c9781b2dd9fa3960d6e7e23a020d5a5d",
+      "current_sha256": "807bf4f88328363d721bb474d2462927c9781b2dd9fa3960d6e7e23a020d5a5d",
+      "matches": true
+    },
+    {
+      "file": "methods/lora24/scripts/evaluate_oof.py",
+      "training_record_sha256": "287c28eb6e028c6997a04afbe1be1cda604f1c12663a56a68d52130a71a75f81",
+      "current_sha256": "287c28eb6e028c6997a04afbe1be1cda604f1c12663a56a68d52130a71a75f81",
+      "matches": true
+    },
+    {
+      "file": "methods/lora24/scripts/patch_notebook.py",
+      "training_record_sha256": "e73610df8333f9bc705c49f1c68488e00693a35ac18016f7424e70c7169b4b61",
+      "current_sha256": "e73610df8333f9bc705c49f1c68488e00693a35ac18016f7424e70c7169b4b61",
+      "matches": true
+    },
+    {
+      "file": "methods/lora24/scripts/predict.py",
+      "training_record_sha256": "08d940102c9bfe64d0e985c0aadea39b56c48cd89e7e8dd4bbe07617debb55e1",
+      "current_sha256": "08d940102c9bfe64d0e985c0aadea39b56c48cd89e7e8dd4bbe07617debb55e1",
+      "matches": true
+    },
+    {
+      "file": "methods/lora24/scripts/preflight.py",
+      "training_record_sha256": "02703997c0f37cc586de4bae1b2fe1c712448a94c318bc2a50232e92bdbc7cbf",
+      "current_sha256": "8aded29a5fb8abcae22bafa6d94a969e5310b5b27df66507e5ff3bc8c4cf7b72",
+      "matches": false
+    },
+    {
+      "file": "methods/lora24/scripts/prepare.py",
+      "training_record_sha256": "9a06039c99922191a92b92dff2bef0e2a92238ac938d9fd59245c2363a5cf946",
+      "current_sha256": "9a06039c99922191a92b92dff2bef0e2a92238ac938d9fd59245c2363a5cf946",
+      "matches": true
+    },
+    {
+      "file": "methods/lora24/scripts/run_jobs.py",
+      "training_record_sha256": "4ea6b04c1d9f3af09abb39f265fd067c381dc9daa5637e7d8497aa6c6d4a4a98",
+      "current_sha256": "4ea6b04c1d9f3af09abb39f265fd067c381dc9daa5637e7d8497aa6c6d4a4a98",
+      "matches": true
+    },
+    {
+      "file": "methods/lora24/scripts/train.py",
+      "training_record_sha256": "6e70addb1be6df547bbee2d76cfc8e188fd14aaa0dcba25eb42991c85d45c7ec",
+      "current_sha256": "6e70addb1be6df547bbee2d76cfc8e188fd14aaa0dcba25eb42991c85d45c7ec",
+      "matches": true
+    },
+    {
+      "file": "methods/lora24/scripts/validate_checkpoint.py",
+      "training_record_sha256": "30adae6b71bd9c016cdfe4a823bb8b6a9999d8750de33f1db7a6e7dd6d55ca47",
+      "current_sha256": "30adae6b71bd9c016cdfe4a823bb8b6a9999d8750de33f1db7a6e7dd6d55ca47",
+      "matches": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+# Local CPU reproduction. Verify the current Kaggle image imports/versions before relying on them.
+numpy>=1.26
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3
+pyarrow>=12
+threadpoolctl>=3.0
+joblib>=1.3

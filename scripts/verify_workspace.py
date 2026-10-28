@@ -27,6 +27,6 @@ def main():
     with (ROOT/'data/competition/test.csv').open(encoding='utf-8',newline='') as f: test=list(csv.DictReader(f))
     assert len(train)==2699 and len(test)==3 and len({x['model'] for x in train})==18
     assert all(k in train[0] for k in ['id','prompt_id','text','model'])
-    result=dict(ok=not errors,files_hashed=len(manifest),python_files_parsed=parsed,notebook_cells=len(nb['cells']),source_identical=True,assets=len(assets),train_rows=len(train),test_preview_rows=len(test),gpu_tested=False,errors=errors)
+    result=dict(ok=not errors,files_hashed=len(manifest),python_files_parsed=parsed,notebook_cells=len(nb['cells']),source_identical=True,assets=len(assets),train_rows=len(train),test_preview_rows=len(test),gpu_tested_by_this_check=False,errors=errors)
     print(json.dumps(result,indent=2)); return 0 if not errors else 1
 if __name__=='__main__': sys.exit(main())
