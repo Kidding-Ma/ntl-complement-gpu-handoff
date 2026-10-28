@@ -1,6 +1,6 @@
-# 输入契约和缺失处理
+# 已评分 0.636 版本的输入说明
 
-机器可读完整列表：[`../manifests/assets.json`](../manifests/assets.json)。以其 32 个 ref 为准。脚本 `fetch_assets.py` 按原发现逻辑创建层级。数据集和 Notebook 最新输出不保证与作者评分时版本相同；下载后须记录版本和 hashes。
+输入列表见 [已评分 metadata](../verified/score_0636/kernel-metadata.json) 和 [原始来源及版本](../verified/score_0636/MODEL_SOURCES.md)。以下是复用该固定配方时的路径与文件说明。Dataset/Notebook 的最新输出不一定等于当时输入。
 
 ## 高优先级输入
 
@@ -22,14 +22,12 @@
 | ATLAS | `josephadamski91/ntl-atlas-qwen3-8b-v1` | 唯一 atlas_bundle.json、adapters.safetensors、ntl_atlas/model.py、ntl_rlcd/data.py 及各自 import 的完整包；Qwen3 8B Base V1 |
 | 环境离线依赖 | `dhruvtibarewal/nlm-offline-wheels` | bitsandbytes wheel 与目标 Python/CUDA 兼容；线上准备和 Kaggle 禁网运行是两个阶段 |
 
-## 不可改变的检查
+## 原配方的融合核对项
 
-main labels 顺序与 complement 的排序顺序不同；原融合有显式重排。保留重排、EOS、pool、截断层数、norms、head 和 blend 权重。主源代码及其提取模块可直接检索每个参数。
+main labels 顺序与 complement 的排序顺序不同；原融合有显式重排。保留重排、EOS、pool、截断层数、norms、head 和 blend 权重。精确参数见已评分 Notebook。
 
 必需 complement：`stylegram, stylometry_lgb, debv3l, electl, desk, lora24_public, lora24_seed7, lora24_claude, lora20_q25_instyle, tokattn_q35, tokattn_deb, ultrabert`。
 
-## 目录与访问
+## 路径布局
 
-下载器保留 ref 层级，例如 `/kaggle/input/models/qwen-lm/qwen-3/Transformers/8b-base/1/config.json`；ATLAS 通过路径中的 `/qwen-3/`、`/8b-base/` 定位基础模型，因此不能任意拍平。Dataset 示例 `/kaggle/input/datasets/nishantdahal/ntl-handwriting-blend/`，Notebook 示例 `/kaggle/input/notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_final/`。
-
-下载器只是取得所列输入；它没有认证过这些资源、没有生成未知文件。未登录、权限不足、删除或无输出都必须保留真实失败。不得修改 manifest 校验以掩盖缺失；无法获得相同来源时，单独重建训练并报告与原方法的差异。
+基础模型示例：`/kaggle/input/models/qwen-lm/qwen-3/Transformers/8b-base/1/config.json`；Dataset 示例：`/kaggle/input/datasets/nishantdahal/ntl-handwriting-blend/`；Notebook 输出示例：`/kaggle/input/notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_final/`。原代码包含依赖这些路径片段的发现逻辑，重新布局时需核对实际选中的文件。

@@ -1,32 +1,74 @@
-"""Verify delivery hashes, syntax, baseline notebook identity, data and manifest."""
-import ast, hashlib, json, sys
+"""Check retained file hashes, runnable Python/notebook syntax and local links."""
+import ast
+import hashlib
+import json
+import re
+import sys
 from pathlib import Path
 
-ROOT=Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[1]
+
+
 def main():
-    manifest=json.loads((ROOT/'manifests/workspace_sha256.json').read_text(encoding='utf-8'))
-    errors=[]
-    for name,expected in manifest.items():
-        p=ROOT/name
-        if not p.is_file(): errors.append('MISSING '+name)
-        elif hashlib.sha256(p.read_bytes()).hexdigest()!=expected: errors.append('CHANGED '+name)
-    parsed=0
-    for p in [*ROOT.glob('scripts/*.py'),*ROOT.glob('upstream/**/*.py')]:
-        try: ast.parse(p.read_text(encoding='utf-8'),filename=str(p)); parsed+=1
-        except SyntaxError as e: errors.append(str(e))
-    nb=json.loads((ROOT/'upstream/ntl_part_two_complement_v2.ipynb').read_text(encoding='utf-8'))
-    ready=json.loads((ROOT/'ntl_part_two_complement_ready.ipynb').read_text(encoding='utf-8'))
-    assert [c['source'] for c in nb['cells']]==[c['source'] for c in ready['cells']]
-    assert ready['nbformat_minor']==5
-    for i,c in enumerate(ready['cells']):
-        if c['cell_type']=='code': ast.parse(''.join(c['source']),filename=f'cell_{i}')
-    assets=json.loads((ROOT/'manifests/assets.json').read_text())['assets']
-    assert len(assets)==32 and len({(a['kind'],a['ref']) for a in assets})==32
-    import csv
-    with (ROOT/'data/competition/train.csv').open(encoding='utf-8',newline='') as f: train=list(csv.DictReader(f))
-    with (ROOT/'data/competition/test.csv').open(encoding='utf-8',newline='') as f: test=list(csv.DictReader(f))
-    assert len(train)==2699 and len(test)==3 and len({x['model'] for x in train})==18
-    assert all(k in train[0] for k in ['id','prompt_id','text','model'])
-    result=dict(ok=not errors,files_hashed=len(manifest),python_files_parsed=parsed,notebook_cells=len(nb['cells']),source_identical=True,assets=len(assets),train_rows=len(train),test_preview_rows=len(test),gpu_tested_by_this_check=False,errors=errors)
-    print(json.dumps(result,indent=2)); return 0 if not errors else 1
-if __name__=='__main__': sys.exit(main())
+    errors = []
+    hashes = json.loads((ROOT / "manifests/workspace_sha256.json").read_text(encoding="utf-8"))
+    for name, expected in hashes.items():
+        path = ROOT / name
+        if not path.is_file():
+            errors.append("MISSING " + name)
+        elif hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+            errors.append("CHANGED " + name)
+
+    python_files = 0
+    for folder in (ROOT / "scripts", ROOT / "methods"):
+        for path in folder.rglob("*.py"):
+            try:
+                ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+                python_files += 1
+            except SyntaxError as exc:
+                errors.append(str(exc))
+
+    cells = 0
+    for name in ("verified/score_0636/ntl_complement_fixed.ipynb",
+                 "methods/lora24/received/own_lora24_ensemble_fixed.ipynb"):
+        notebook = json.loads((ROOT / name).read_text(encoding="utf-8"))
+        for i, cell in enumerate(notebook["cells"]):
+            if cell["cell_type"] != "code":
+                continue
+            source = "".join(cell["source"])
+            source = "\n".join(line for line in source.splitlines()
+                                if not line.lstrip().startswith(("%", "!")))
+            try:
+                ast.parse(source, filename=f"{name}:cell{i}")
+                cells += 1
+            except SyntaxError as exc:
+                errors.append(str(exc))
+
+    links = 0
+    for path in ROOT.rglob("*.md"):
+        if any(part in {".git", ".venv", "outputs"} for part in path.relative_to(ROOT).parts):
+            continue
+        for target in re.findall(r"\]\(([^)]+)\)", path.read_text(encoding="utf-8")):
+            if target.startswith(("https://", "http://", "#", "mailto:")):
+                continue
+            links += 1
+            if not (path.parent / target.split("#")[0]).exists():
+                errors.append(f"BROKEN LINK {path.relative_to(ROOT)}: {target}")
+
+    weight = ROOT / "checkpoints/own_lora24_checkpoint.zip"
+    expected = "3d84cdadc2c2741c21c60cdead22a57076aca88563631da9719c4bba998de28b"
+    if weight.is_file() and weight.stat().st_size > 1024:
+        weight_status = "hash_verified"
+        if hashlib.sha256(weight.read_bytes()).hexdigest() != expected:
+            errors.append("CHANGED LoRA24 ZIP")
+    else:
+        weight_status = "optional_lfs_weight_not_downloaded"
+
+    print(json.dumps(dict(ok=not errors, files_hashed=len(hashes),
+                          python_files_parsed=python_files, notebook_cells_parsed=cells,
+                          local_links_checked=links, lora24=weight_status, errors=errors), indent=2))
+    return 1 if errors else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

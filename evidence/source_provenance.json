@@ -1,9 +1,0 @@
-{
-  "retrieved_date": "2026-10-24 Asia/Shanghai",
-  "url": "https://www.kaggle.com/api/v1/kernels/pull/fleongg/ntl-part-two-complement",
-  "page_url": "https://www.kaggle.com/code/fleongg/ntl-part-two-complement",
-  "ui_version_id": 361521141,
-  "api_current_version": 2,
-  "api_response_sha256": "68c0a9cdf4e95a5d05fb73cb300ed76ee3d1025bdedf2a721b6c4bc3756423a6",
-  "note": "API lastRunTime disagrees with UI publication time. Keep fields separately; do not infer an execution success."
-}

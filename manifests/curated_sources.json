@@ -1,6 +1,6 @@
 {
   "date": "2026-10-28",
-  "selection": "Useful local artifacts only; existing upstream snapshots remain unchanged",
+  "selection": "Retained source code, trained weights and measured evidence",
   "files": [
     {
       "path": "verified/score_0636/ntl_complement_fixed.ipynb",
@@ -71,31 +71,15 @@
     {
       "path": "methods/lora24/received/REPAIR_NOTES.md",
       "local_source": "Received-LoRA24-20261023/deliverables/REPAIR_NOTES.md",
-      "sha256": "042482a77d01a1ce250115b7aac0eadbbb7d54f94914f0fb3ee1a27f8d9c54ef",
-      "reason": "Independent trained member results and compatibility fixes; ensemble not scored"
+      "sha256": "73a90eb492dea5c686652eb1413fdf7ce779f188e83d6f5531ff2934b7e55633",
+      "reason": "Independent trained member results and compatibility fixes; ensemble not scored",
+      "original_sha256": "042482a77d01a1ce250115b7aac0eadbbb7d54f94914f0fb3ee1a27f8d9c54ef",
+      "change": "Removed obsolete execution instructions; retained repair facts"
     },
     {
       "path": "methods/lora24/received/own_lora24_ensemble_fixed.ipynb",
       "local_source": "Received-LoRA24-20261023/deliverables/own_lora24_ensemble_fixed.ipynb",
       "sha256": "94cb8f9e634b24bdefde33cb304d60efa07799e3dd3513014515bdff11c8a862",
-      "reason": "Independent trained member results and compatibility fixes; ensemble not scored"
-    },
-    {
-      "path": "methods/lora24/received/ensemble_fixed.py",
-      "local_source": "Received-LoRA24-20261023/deliverables/ensemble_fixed.py",
-      "sha256": "e849d582c893bee8a58e64d28dfc7c1712a91c76489eb80192371a5271f4dcef",
-      "reason": "Independent trained member results and compatibility fixes; ensemble not scored"
-    },
-    {
-      "path": "methods/lora24/received/gaussian_fixed.py",
-      "local_source": "Received-LoRA24-20261023/deliverables/gaussian_fixed.py",
-      "sha256": "31a021bff94b68698e9b1d1bbfcc2b254b1ad85d0999cc185dd9d8026bf5059e",
-      "reason": "Independent trained member results and compatibility fixes; ensemble not scored"
-    },
-    {
-      "path": "methods/lora24/received/preflight_fixed.py",
-      "local_source": "Received-LoRA24-20261023/deliverables/preflight_fixed.py",
-      "sha256": "a62e647a20223651a55fe3ca8d113bbb8abad56693509d72b58b1271f5b8f5a4",
       "reason": "Independent trained member results and compatibility fixes; ensemble not scored"
     },
     {
@@ -255,12 +239,6 @@
       "reason": "Reusable CPU control, text views, style features and data audit"
     },
     {
-      "path": "methods/cpu/cpu_blend_inference.py",
-      "local_source": "NameThatLLM-GoldRelease/scripts/cpu_blend_inference.py",
-      "sha256": "de29974986aca37fe4a944422e514e448bdefde678a44d9e5a54e49e46c0cb2b",
-      "reason": "Reusable CPU control, text views, style features and data audit"
-    },
-    {
       "path": "methods/cpu/audit_dataset.py",
       "local_source": "NameThatLLM-GoldRelease/scripts/audit_dataset.py",
       "sha256": "0b77b262b4cc39038b903871df9fbaa675f6daa74d5926764dafc03882cf7fa3",
@@ -282,12 +260,6 @@
       "path": "methods/cpu/evidence/cpu_numeric_style_local_metrics.json",
       "local_source": "NameThatLLM-GoldRelease/evidence/metrics/cpu_numeric_style_local_metrics.json",
       "sha256": "beaad364cce5ddf6fdf407cd8edf1806718563bc37363858d7ba7f61b49b315f",
-      "reason": "Measured local CPU scores and diagnostic limitations"
-    },
-    {
-      "path": "methods/cpu/evidence/cpu_blend_probe_results.json",
-      "local_source": "NameThatLLM-GoldRelease/evidence/metrics/cpu_blend_probe_results.json",
-      "sha256": "e58446cacf92a8f6f634f02e2938a8c205b625d0232d197cb305549c35ba7705",
       "reason": "Measured local CPU scores and diagnostic limitations"
     },
     {

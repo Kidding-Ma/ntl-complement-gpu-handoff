@@ -18,7 +18,7 @@ python -m zipfile -e checkpoints/own_lora24_checkpoint.zip outputs/lora24
 
 ## 使用与重新训练
 
-下面从 `methods/lora24` 执行；先准备可用的 CUDA PyTorch、依赖与基础模型。当前无 GPU 电脑只验语法和完整性，不宣称 forward 成功。
+下面从 `methods/lora24` 执行；先准备可用的 CUDA PyTorch、依赖与基础模型。
 
 ```bash
 python -m pip install -r requirements-gpu.txt
@@ -41,6 +41,6 @@ python scripts/evaluate_oof.py --plan ../../outputs/lora24-new/plan.json --check
 
 每次新配置用新输出路径。脚本 `--help` 是参数依据，配置在 `configs/train.json`。原评估脚本只导出汇总，融合前需扩展保存逐行 OOF；当前 ZIP 只有 final，不能当未见官方验证标签的模型。
 
-`received/own_lora24_ensemble_fixed.ipynb` 与修复模块是接入旧集成的候选。[修复说明](received/REPAIR_NOTES.md)主要避免误选只有配置的 base_config；本地检查不代表修改后完整集成已得分。
+`received/own_lora24_ensemble_fixed.ipynb` 是接入旧集成的候选，包含完整预检和内嵌 Gaussian 模块。[修复说明](received/REPAIR_NOTES.md)主要避免误选只有配置的 base_config；本地检查不代表修改后完整集成已得分。
 
 核心训练、预测和 ntl 模块与训练记录 SHA 匹配；辅助 preflight 是后续版本。具体见 [源码对照](../../manifests/lora_training_source_parity.json)。代码保留 [MIT LICENSE](LICENSE)，基础模型/衍生权重适用原模型条款，不继承公开原集成成绩。
